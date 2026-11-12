@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Fun-Student — Вход</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="loginScreen" class="screen active">
+    <div class="card">
+        <h1 class="title">Вход в систему</h1>
+        <input id="emailInput" type="text" class="input" placeholder="Введите почту"/>
+        <button id="loginBtn" class="btn btn-primary">Войти</button>
+        <p id="loginError" class="error hidden"></p>
+    </div>
+</div>
+<div id="adminScreen" class="screen">
+    <div class="card wide">
+        <h2 class="title">Панель администратора</h2>
+        <div class="btn-row">
+            <button id="addStudentBtn" class="btn btn-success">Добавить ученика</button>
+            <button id="deleteStudentBtn" class="btn btn-danger">Удалить ученика</button>
+        </div>
+    </div>
+</div>
+<div id="teacherScreen" class="screen">
+    <div class="card wide">
+        <h2 class="title">Панель учителя</h2>
+        <div class="search-row">
+            <input id="searchInput" type="text" class="input" placeholder="Имя ученика"/>
+            <button id="searchBtn" class="btn btn-primary">Найти</button>
+        </div>
+        <div id="searchResult" class="result-box"></div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
